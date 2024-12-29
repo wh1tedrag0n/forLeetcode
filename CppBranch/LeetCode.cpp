@@ -3,21 +3,15 @@
 #include <algorithm>
 using namespace std;
 
-int main()
+class Solution721
 {
-	Solution721 sol;
-	vector<vector<string>> temp{ {"John", "johnsmith@mail.com", "john_newyork@mail.com"},
-		{"John", "johnsmith@mail.com", "john00@mail.com"},{"Mary", "mary@mail.com"},
-		{"John", "johnnybravo@mail.com"} };
-}
-
-class Solution721 {
 private:
 	vector<vector<string>> Union;
 
-	int Find(vector<string> input) {
+	int Find(vector<string> input)
+	{
 		int index = 0;
-		for (const auto& item : Union)
+		for (const auto &item : Union)
 		{
 			for (int i = 1; i < item.size(); i++)
 			{
@@ -34,10 +28,14 @@ private:
 		return -1;
 	}
 
-	void Merge(int index, vector<string> account) {
-		for (int i = 1; i < account.size(); i++) {
-			for (int j = 1; j < Union[index].size(); j++) {
-				if (account[i] == Union[index][j]) {
+	void Merge(int index, vector<string> account)
+	{
+		for (int i = 1; i < account.size(); i++)
+		{
+			for (int j = 1; j < Union[index].size(); j++)
+			{
+				if (account[i] == Union[index][j])
+				{
 					break;
 				}
 			}
@@ -48,8 +46,9 @@ private:
 	}
 
 public:
-	vector<vector<string>> accountsMerge(vector<vector<string>>& accounts) {
-		for (const auto& account : accounts)
+	vector<vector<string>> accountsMerge(vector<vector<string>> &accounts)
+	{
+		for (const auto &account : accounts)
 		{
 			int index = Find(account);
 			if (index != -1)
@@ -65,8 +64,21 @@ public:
 	}
 };
 
-class Solution {
+class Solution
+{
 public:
-	std::vector<int> findRedundantConnection(std::vector<std::vector<int>>& edges) {
+	std::vector<int> findRedundantConnection(std::vector<std::vector<int>> &edges)
+	{
 	}
 };
+
+int main()
+{
+	cout << "hello world" << endl;
+	Solution721 sol;
+	vector<vector<string>> temp{{"John", "johnsmith@mail.com", "john_newyork@mail.com"},
+								{"John", "johnsmith@mail.com", "john00@mail.com"},
+								{"Mary", "mary@mail.com"},
+								{"John", "johnnybravo@mail.com"}};
+	sol.accountsMerge(temp);
+}
