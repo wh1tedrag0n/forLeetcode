@@ -127,11 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\Sun_C\source\repos\cpp\LeetCode\ConsoleApplication2\ConsoleApplication2\Solution.cpp" />
     <ClCompile Include="LeetCode.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="C:\Users\Sun_C\source\repos\cpp\LeetCode\ConsoleApplication2\ConsoleApplication2\Solution.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -18,13 +18,5 @@
     <ClCompile Include="LeetCode.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Sun_C\source\repos\cpp\LeetCode\ConsoleApplication2\ConsoleApplication2\Solution.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="C:\Users\Sun_C\source\repos\cpp\LeetCode\ConsoleApplication2\ConsoleApplication2\Solution.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>
